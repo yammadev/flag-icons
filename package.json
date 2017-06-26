@@ -1,0 +1,24 @@
+{
+  "name": "flag-icons",
+  "version": "1.0.0",
+  "author": "yammadev - https://github.com/yammadev",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yammadev/flag-icons"
+  },
+  "scripts": {
+    "compile": "npm run compile-src && npm run compile-min",
+    "compile-src": "sass sass/flag-icons.scss:css/flag-icons.css --sourcemap=none",
+    "compile-min": "sass sass/flag-icons.scss:css/flag-icons.min.css --style compressed --sourcemap=none",
+    "watch": "sass --watch sass/flag-icons.scss:css/flag-icons.css --sourcemap=none",
+    "clear": "npm run clear-cache && npm run clear-compiled",
+    "clear-cache": "rm -rf .sass-cache",
+    "clear-compiled": "cd css && rm -rf *.css *.map"
+  }
+}
