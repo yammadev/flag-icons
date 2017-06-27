@@ -1,5 +1,5 @@
 /**
- * Flag-icons: v1.0.0
+ * Flag-icons: v1.1.0
  * url: https://github.com/yammadev/flag-icons
  * author: yammadev - https://github.com/yammadev
  */
@@ -7,21 +7,23 @@
 // Variables
 @import "variables";
 
-// Wrappers
-i, span {
+// Flag icons
+span, i {
   &.flag-icons {
     background-size: contain;
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     display: inline-block;
     line-height: 1em;
 
     // Rectangle
+    height: 1em;
     width: (4 / 3) * 1em;
 
     // Square
     &.square {
+      height: 1em;
       width: 1em;
     }
 
@@ -32,8 +34,7 @@ i, span {
 
     // Flags
     @each $flag in $flags {
-      &-#{$flag} {
-        @extend .flag-icons;
+      &.#{$flag} {
         background-image: url(#{$path}/#{$flag}.svg);
       }
     }
