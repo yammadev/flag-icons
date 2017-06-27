@@ -79,7 +79,7 @@ $ grunt build
 # Reference
 ## Extras
 Flag | Code |Region
----- |------|--------
+:---: | :---: | :---
 ![AD](png/EU.png)   | EU    | European Union
 ![AE](png/WW.png)   | WW    | World
 ![CNA](png/CNA.png) | CNA   | North America
@@ -91,7 +91,7 @@ Flag | Code |Region
 
 ## Countries
 Flag | Code |Country
----- |------|--------
+:---: | :---: | :---
 ![AD](png/AD.png) | AD | Andorra
 ![AE](png/AE.png) | AE | United Arab Emirates
 ![AF](png/AF.png) | AF | Afghanistan
@@ -297,6 +297,9 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [1.2.1] - 2017-06-27
+- *readme* edited.
+
 ## [1.2.0] - 2017-06-27
 - *grunt* integrated for better and cleaner approach.
 - *png* flags.
