@@ -15,7 +15,7 @@ In `html` add the compiled `css` file.
 <link rel="stylesheet" href="/css/flag-icons.min.css">
 ```
 
-Download the `svg` icons in your path and use `<i>` or `<span>` tags adding the class `flag-icons` followed of the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search/code/) for each one. The result is a rectangular flag, however, the `square` class can be used if a squared one is required.
+Download the `svg` icons in your path and use `<i>` or `<span>` tags adding the class `flag-icons` followed of the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for each one. The result is a rectangular flag, however, the `square` class can be used if a squared one is required.
 
 ```html
 <!-- Using <i> -->
@@ -297,6 +297,10 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [1.2.2] - 2017-06-27
+- Link to *ISO 3166-1-alpha-2 code* updated.
+- *readme* edited.
+
 ## [1.2.1] - 2017-06-27
 - *readme* edited.
 
