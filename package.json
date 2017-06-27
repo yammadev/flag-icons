@@ -1,24 +1,35 @@
 {
   "name": "flag-icons",
-  "version": "1.1.0",
-  "author": "yammadev - https://github.com/yammadev",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yammadev/flag-icons"
+  "description": "A beautiful svg + png + sass + css collection of countries flags.",
+  "version": "1.2.0",
+  "author": {
+    "name": "Yefferson Marín",
+    "email": "yefferson.marin@gmail.com",
+    "url": "https://github.com/yammadev"
   },
+  "license": "MIT",
+  "repository": "https://github.com/yammadev/flag-icons.git",
+  "homepage": "https://yammadev.github.io/flag-icons/",
   "scripts": {
-    "compile": "npm run compile-src && npm run compile-min",
-    "compile-src": "sass sass/flag-icons.scss:css/flag-icons.css --sourcemap=none",
-    "compile-min": "sass sass/flag-icons.scss:css/flag-icons.min.css --style compressed --sourcemap=none",
-    "watch": "sass --watch sass/flag-icons.scss:css/flag-icons.css --sourcemap=none",
-    "clear": "npm run clear-cache && npm run clear-compiled",
-    "clear-cache": "rm -rf .sass-cache",
-    "clear-compiled": "cd css && rm -rf *.css *.map"
-  }
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-svg2png": "^0.2.7"
+  },
+  "keywords": [
+    "svg",
+    "png",
+    "sass",
+    "css",
+    "icons",
+    "countries",
+    "grunt",
+    "npm"
+  ]
 }

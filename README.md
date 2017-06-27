@@ -1,11 +1,21 @@
-# Flag icons ![CO](/svg/CO.svg)
-A beautiful `svg` collection of countries flags + `sass` + `css` implementation.
+# Flag icons ![CO](png/CO.png)
+A beautiful `svg` + `png` + `sass` + `css` collection of countries flags.
 
 # Icons
-All `sketch` + `png` files are in [madebybowtie/FlagKit](https://github.com/madebybowtie/FlagKit). Currently `svg` is just supported in [this](https://github.com/lucidlemon/FlagKit) fork, and it's still pending for integration.
+All `sketch` files are in [madebybowtie/FlagKit](https://github.com/madebybowtie/FlagKit). Currently `svg` is just supported in [this](https://github.com/lucidlemon/FlagKit) fork, and it's still pending for integration.
 
 # Instructions
-Use `<i>` or `<span>` tags and add the class `flag-icons` followed by the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search/code/) for each one. The result is a rectangular flag, however, the `square` class can be used if a square flag is required.
+## Simple css
+In `html` add the compiled `css` file.
+
+```html
+<link rel="stylesheet" href="/css/flag-icons.css">
+
+<!-- Compressed -->
+<link rel="stylesheet" href="/css/flag-icons.min.css">
+```
+
+Download the `svg` icons in your path and use `<i>` or `<span>` tags adding the class `flag-icons` followed of the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://www.iso.org/obp/ui/#search/code/) for each one. The result is a rectangular flag, however, the `square` class can be used if a squared one is required.
 
 ```html
 <!-- Using <i> -->
@@ -17,25 +27,24 @@ Use `<i>` or `<span>` tags and add the class `flag-icons` followed by the flag `
 <span class="flag-icons square CO"></span>
 ```
 
-You can also format the default size of the flag in your `css` file:
+You can also format the default size of the flag in a custom `css` file:
 
 ```css
-.flag-icons,    /* Formatting default */
+.flag-icons,    /* Format default */
 .rectangle {    /* Or use as new class */
   height: 2em !important;
   width: 2.66667em !important;
   line-height: 2em !important;
 }
 
-.flag-icons,    /* Formatting default */
-.square {       /* Or formatting default square class */
+.flag-icons,    /* Format default */
+.square,        /* Format default square class */
+.squared {      /* Or use as new class */
   height: 2em !important;
   width: 2em !important;
   line-height: 2em !important;
 }
 ```
-
-Then,
 
 ```html
 <!-- Rectangle -->
@@ -45,221 +54,241 @@ Then,
 <!-- Square -->
 <i class="flag-icons CO"></i>
 <i class="flag-icons square CO"></i>
+<i class="flag-icons squared CO"></i>
+```
+
+## Autocompiled Sass
+First download the `svg` flags desired, then edit `sass/_variables.scss` as followed:
+
+```scss
+  // ...
+  $flags: (
+    'code'
+    ...
+    'code'
+  );
+```
+
+Where `'code'` represents the names of the flags downloaded. Finally you can compile by running in the terminal:
+
+```bash
+$ cd flag-icons
+$ grunt build
 ```
 
 # Reference
 ## Extras
-| Flag | Code | Region |
-| :-------------: | :-------------: | :-------------: |
-| ![AD](svg/EU.svg) | EU | European Union |
-| ![AE](svg/WW.svg) | WW | World |
-| ![CNA](svg/CNA.svg) | CNA | North America |
-| ![CSA](svg/CSA.svg) | CSA | South America |
-| ![CEU](svg/CEU.svg) | CEU | Europe |
-| ![CAF](svg/CAF.svg) | CAF | Africa |
-| ![CAS](svg/CAS.svg) | CAS | Asia |
-| ![COC](svg/COC.svg) | COC | Oceania |
+Flag | Code |Region
+---- |------|--------
+![AD](png/EU.png)   | EU    | European Union
+![AE](png/WW.png)   | WW    | World
+![CNA](png/CNA.png) | CNA   | North America
+![CSA](png/CSA.png) | CSA   | South America
+![CEU](png/CEU.png) | CEU   | Europe
+![CAF](png/CAF.png) | CAF   | Africa
+![CAS](png/CAS.png) | CAS   | Asia
+![COC](png/COC.png) | COC   | Oceania
 
 ## Countries
-| Flag | Code | Country |
-| :-------------: | :-------------: | :-------------: |
-| ![AD](svg/AD.svg) | AD | Andorra |
-| ![AE](svg/AE.svg) | AE | United Arab Emirates |
-| ![AF](svg/AF.svg) | AF | Afghanistan |
-| ![AG](svg/AG.svg) | AG | Antigua & Barbuda |
-| ![AI](svg/AI.svg) | AI | Anguilla |
-| ![AL](svg/AL.svg) | AL | Albania |
-| ![AM](svg/AM.svg) | AM | Armenia |
-| ![AO](svg/AO.svg) | AO | Angola |
-| ![AR](svg/AR.svg) | AR | Argentina |
-| ![AT](svg/AT.svg) | AT | Austria |
-| ![AU](svg/AU.svg) | AU | Australia |
-| ![AX](svg/AX.svg) | AX | Åland Islands |
-| ![AZ](svg/AZ.svg) | AZ | Azerbaijan |
-| ![BA](svg/BA.svg) | BA | Bosnia & Herzegovina |
-| ![BB](svg/BB.svg) | BB | Barbados |
-| ![BD](svg/BD.svg) | BD | Bangladesh |
-| ![BE](svg/BE.svg) | BE | Belgium |
-| ![BF](svg/BF.svg) | BF | Burkina Faso |
-| ![BG](svg/BG.svg) | BG | Bulgaria |
-| ![BH](svg/BH.svg) | BH | Bahrain |
-| ![BI](svg/BI.svg) | BI | Burundi |
-| ![BJ](svg/BJ.svg) | BJ | Benin |
-| ![BM](svg/BM.svg) | BM | Bermuda |
-| ![BN](svg/BN.svg) | BN | Brunei |
-| ![BO](svg/BO.svg) | BO | Bolivia |
-| ![BR](svg/BR.svg) | BR | Brazil |
-| ![BS](svg/BS.svg) | BS | Bahamas |
-| ![BT](svg/BT.svg) | BT | Bhutan |
-| ![BW](svg/BW.svg) | BW | Botswana |
-| ![BY](svg/BY.svg) | BY | Belarus |
-| ![BZ](svg/BZ.svg) | BZ | Belize |
-| ![CA](svg/CA.svg) | CA | Canada |
-| ![CD](svg/CD.svg) | CD | Congo - Kinshasa |
-| ![CF](svg/CF.svg) | CF | Central African Republic |
-| ![CG](svg/CG.svg) | CG | Congo - Brazzaville |
-| ![CH](svg/CH.svg) | CH | Switzerland |
-| ![CI](svg/CI.svg) | CI | Côte d’Ivoire |
-| ![CL](svg/CL.svg) | CL | Chile |
-| ![CM](svg/CM.svg) | CM | Cameroon |
-| ![CN](svg/CN.svg) | CN | China |
-| ![CO](svg/CO.svg) | CO | Colombia |
-| ![CR](svg/CR.svg) | CR | Costa Rica |
-| ![CU](svg/CU.svg) | CU | Cuba |
-| ![CV](svg/CV.svg) | CV | Cape Verde |
-| ![CY](svg/CY.svg) | CY | Cyprus |
-| ![CZ](svg/CZ.svg) | CZ | Czech Republic |
-| ![DE](svg/DE.svg) | DE | Germany |
-| ![DJ](svg/DJ.svg) | DJ | Djibouti |
-| ![DK](svg/DK.svg) | DK | Denmark |
-| ![DM](svg/DM.svg) | DM | Dominica |
-| ![DO](svg/DO.svg) | DO | Dominican Republic |
-| ![DZ](svg/DZ.svg) | DZ | Algeria |
-| ![EC](svg/EC.svg) | EC | Ecuador |
-| ![EE](svg/EE.svg) | EE | Estonia |
-| ![EG](svg/EG.svg) | EG | Egypt |
-| ![ER](svg/ER.svg) | ER | Eritrea |
-| ![ES](svg/ES.svg) | ES | Spain |
-| ![ET](svg/ET.svg) | ET | Ethiopia |
-| ![FI](svg/FI.svg) | FI | Finland |
-| ![FJ](svg/FJ.svg) | FJ | Fiji |
-| ![FM](svg/FM.svg) | FM | Micronesia |
-| ![FR](svg/FR.svg) | FR | France |
-| ![GA](svg/GA.svg) | GA | Gabon |
-| ![GB](svg/GB.svg) | GB | United Kingdom |
-| ![GD](svg/GD.svg) | GD | Grenada |
-| ![GE](svg/GE.svg) | GE | Georgia |
-| ![GH](svg/GH.svg) | GH | Ghana |
-| ![GM](svg/GM.svg) | GM | Gambia |
-| ![GN](svg/GN.svg) | GN | Guinea |
-| ![GQ](svg/GQ.svg) | GQ | Equatorial Guinea |
-| ![GR](svg/GR.svg) | GR | Greece |
-| ![GT](svg/GT.svg) | GT | Guatemala |
-| ![GW](svg/GW.svg) | GW | Guinea-Bissau |
-| ![GY](svg/GY.svg) | GY | Guyana |
-| ![HK](svg/HK.svg) | HK | Hong Kong SAR China |
-| ![HN](svg/HN.svg) | HN | Honduras |
-| ![HR](svg/HR.svg) | HR | Croatia |
-| ![HT](svg/HT.svg) | HT | Haiti |
-| ![HU](svg/HU.svg) | HU | Hungary |
-| ![ID](svg/ID.svg) | ID | Indonesia |
-| ![IE](svg/IE.svg) | IE | Ireland |
-| ![IL](svg/IL.svg) | IL | Israel |
-| ![IN](svg/IN.svg) | IN | India |
-| ![IQ](svg/IQ.svg) | IQ | Iraq |
-| ![IR](svg/IR.svg) | IR | Iran |
-| ![IS](svg/IS.svg) | IS | Iceland |
-| ![IT](svg/IT.svg) | IT | Italy |
-| ![JM](svg/JM.svg) | JM | Jamaica |
-| ![JO](svg/JO.svg) | JO | Jordan |
-| ![JP](svg/JP.svg) | JP | Japan |
-| ![KE](svg/KE.svg) | KE | Kenya |
-| ![KG](svg/KG.svg) | KG | Kyrgyzstan |
-| ![KH](svg/KH.svg) | KH | Cambodia |
-| ![KM](svg/KM.svg) | KM | Comoros |
-| ![KN](svg/KN.svg) | KN | St. Kitts & Nevis |
-| ![KP](svg/KP.svg) | KP | North Korea |
-| ![KR](svg/KR.svg) | KR | South Korea |
-| ![KW](svg/KW.svg) | KW | Kuwait |
-| ![KY](svg/KY.svg) | KY | Cayman Islands |
-| ![KZ](svg/KZ.svg) | KZ | Kazakhstan |
-| ![LA](svg/LA.svg) | LA | Laos |
-| ![LB](svg/LB.svg) | LB | Lebanon |
-| ![LC](svg/LC.svg) | LC | St. Lucia |
-| ![LI](svg/LI.svg) | LI | Liechtenstein |
-| ![LK](svg/LK.svg) | LK | Sri Lanka |
-| ![LR](svg/LR.svg) | LR | Liberia |
-| ![LS](svg/LS.svg) | LS | Lesotho |
-| ![LT](svg/LT.svg) | LT | Lithuania |
-| ![LU](svg/LU.svg) | LU | Luxembourg |
-| ![LV](svg/LV.svg) | LV | Latvia |
-| ![LY](svg/LY.svg) | LY | Libya |
-| ![MA](svg/MA.svg) | MA | Morocco |
-| ![MC](svg/MC.svg) | MC | Monaco |
-| ![MD](svg/MD.svg) | MD | Moldova |
-| ![ME](svg/ME.svg) | ME | Montenegro |
-| ![MG](svg/MG.svg) | MG | Madagascar |
-| ![MK](svg/MK.svg) | MK | Macedonia |
-| ![ML](svg/ML.svg) | ML | Mali |
-| ![MM](svg/MM.svg) | MM | Myanmar (Burma) |
-| ![MN](svg/MN.svg) | MN | Mongolia |
-| ![MO](svg/MO.svg) | MO | Macau SAR China |
-| ![MR](svg/MR.svg) | MR | Mauritania |
-| ![MS](svg/MS.svg) | MS | Montserrat |
-| ![MT](svg/MT.svg) | MT | Malta |
-| ![MU](svg/MU.svg) | MU | Mauritius |
-| ![MV](svg/MV.svg) | MV | Maldives |
-| ![MW](svg/MW.svg) | MW | Malawi |
-| ![MX](svg/MX.svg) | MX | Mexico |
-| ![MY](svg/MY.svg) | MY | Malaysia |
-| ![MZ](svg/MZ.svg) | MZ | Mozambique |
-| ![NA](svg/NA.svg) | NA | Namibia |
-| ![NE](svg/NE.svg) | NE | Niger |
-| ![NG](svg/NG.svg) | NG | Nigeria |
-| ![NI](svg/NI.svg) | NI | Nicaragua |
-| ![NL](svg/NL.svg) | NL | Netherlands |
-| ![NO](svg/NO.svg) | NO | Norway |
-| ![NP](svg/NP.svg) | NP | Nepal |
-| ![NZ](svg/NZ.svg) | NZ | New Zealand |
-| ![OM](svg/OM.svg) | OM | Oman |
-| ![PA](svg/PA.svg) | PA | Panama |
-| ![PE](svg/PE.svg) | PE | Peru |
-| ![PG](svg/PG.svg) | PG | Papua New Guinea |
-| ![PH](svg/PH.svg) | PH | Philippines |
-| ![PK](svg/PK.svg) | PK | Pakistan |
-| ![PL](svg/PL.svg) | PL | Poland |
-| ![PR](svg/PR.svg) | PR | Puerto Rico |
-| ![PT](svg/PT.svg) | PT | Portugal |
-| ![PW](svg/PW.svg) | PW | Palau |
-| ![PY](svg/PY.svg) | PY | Paraguay |
-| ![QA](svg/QA.svg) | QA | Qatar |
-| ![RO](svg/RO.svg) | RO | Romania |
-| ![RS](svg/RS.svg) | RS | Serbia |
-| ![RU](svg/RU.svg) | RU | Russia |
-| ![RW](svg/RW.svg) | RW | Rwanda |
-| ![SA](svg/SA.svg) | SA | Saudi Arabia |
-| ![SB](svg/SB.svg) | SB | Solomon Islands |
-| ![SC](svg/SC.svg) | SC | Seychelles |
-| ![SD](svg/SD.svg) | SD | Sudan |
-| ![SE](svg/SE.svg) | SE | Sweden |
-| ![SG](svg/SG.svg) | SG | Singapore |
-| ![SI](svg/SI.svg) | SI | Slovenia |
-| ![SK](svg/SK.svg) | SK | Slovakia |
-| ![SL](svg/SL.svg) | SL | Sierra Leone |
-| ![SM](svg/SM.svg) | SM | San Marino |
-| ![SN](svg/SN.svg) | SN | Senegal |
-| ![SO](svg/SO.svg) | SO | Somalia |
-| ![SR](svg/SR.svg) | SR | Suriname |
-| ![ST](svg/ST.svg) | ST | São Tomé & Príncipe |
-| ![SV](svg/SV.svg) | SV | El Salvador |
-| ![SY](svg/SY.svg) | SY | Syria |
-| ![SZ](svg/SZ.svg) | SZ | Swaziland |
-| ![TC](svg/TC.svg) | TC | Turks & Caicos Islands |
-| ![TD](svg/TD.svg) | TD | Chad |
-| ![TG](svg/TG.svg) | TG | Togo |
-| ![TH](svg/TH.svg) | TH | Thailand |
-| ![TJ](svg/TJ.svg) | TJ | Tajikistan |
-| ![TL](svg/TL.svg) | TL | Timor-Leste |
-| ![TM](svg/TM.svg) | TM | Turkmenistan |
-| ![TN](svg/TN.svg) | TN | Tunisia |
-| ![TO](svg/TO.svg) | TO | Tonga |
-| ![TR](svg/TR.svg) | TR | Turkey |
-| ![TT](svg/TT.svg) | TT | Trinidad & Tobago |
-| ![TW](svg/TW.svg) | TW | Taiwan |
-| ![TZ](svg/TZ.svg) | TZ | Tanzania |
-| ![UA](svg/UA.svg) | UA | Ukraine |
-| ![UG](svg/UG.svg) | UG | Uganda |
-| ![US](svg/US.svg) | US | United States |
-| ![UY](svg/UY.svg) | UY | Uruguay |
-| ![UZ](svg/UZ.svg) | UZ | Uzbekistan |
-| ![VC](svg/VC.svg) | VC | St. Vincent & Grenadines |
-| ![VE](svg/VE.svg) | VE | Venezuela |
-| ![VG](svg/VG.svg) | VG | British Virgin Islands |
-| ![VN](svg/VN.svg) | VN | Vietnam |
-| ![WS](svg/WS.svg) | WS | Samoa |
-| ![YE](svg/YE.svg) | YE | Yemen |
-| ![ZA](svg/ZA.svg) | ZA | South Africa |
-| ![ZW](svg/ZW.svg) | ZW | Zimbabwe |
+Flag | Code |Country
+---- |------|--------
+![AD](png/AD.png) | AD | Andorra
+![AE](png/AE.png) | AE | United Arab Emirates
+![AF](png/AF.png) | AF | Afghanistan
+![AG](png/AG.png) | AG | Antigua & Barbuda
+![AI](png/AI.png) | AI | Anguilla
+![AL](png/AL.png) | AL | Albania
+![AM](png/AM.png) | AM | Armenia
+![AO](png/AO.png) | AO | Angola
+![AR](png/AR.png) | AR | Argentina
+![AT](png/AT.png) | AT | Austria
+![AU](png/AU.png) | AU | Australia
+![AX](png/AX.png) | AX | Åland Islands
+![AZ](png/AZ.png) | AZ | Azerbaijan
+![BA](png/BA.png) | BA | Bosnia & Herzegovina
+![BB](png/BB.png) | BB | Barbados
+![BD](png/BD.png) | BD | Bangladesh
+![BE](png/BE.png) | BE | Belgium
+![BF](png/BF.png) | BF | Burkina Faso
+![BG](png/BG.png) | BG | Bulgaria
+![BH](png/BH.png) | BH | Bahrain
+![BI](png/BI.png) | BI | Burundi
+![BJ](png/BJ.png) | BJ | Benin
+![BM](png/BM.png) | BM | Bermuda
+![BN](png/BN.png) | BN | Brunei
+![BO](png/BO.png) | BO | Bolivia
+![BR](png/BR.png) | BR | Brazil
+![BS](png/BS.png) | BS | Bahamas
+![BT](png/BT.png) | BT | Bhutan
+![BW](png/BW.png) | BW | Botswana
+![BY](png/BY.png) | BY | Belarus
+![BZ](png/BZ.png) | BZ | Belize
+![CA](png/CA.png) | CA | Canada
+![CD](png/CD.png) | CD | Congo - Kinshasa
+![CF](png/CF.png) | CF | Central African Republic
+![CG](png/CG.png) | CG | Congo - Brazzaville
+![CH](png/CH.png) | CH | Switzerland
+![CI](png/CI.png) | CI | Côte d’Ivoire
+![CL](png/CL.png) | CL | Chile
+![CM](png/CM.png) | CM | Cameroon
+![CN](png/CN.png) | CN | China
+![CO](png/CO.png) | CO | Colombia
+![CR](png/CR.png) | CR | Costa Rica
+![CU](png/CU.png) | CU | Cuba
+![CV](png/CV.png) | CV | Cape Verde
+![CY](png/CY.png) | CY | Cyprus
+![CZ](png/CZ.png) | CZ | Czech Republic
+![DE](png/DE.png) | DE | Germany
+![DJ](png/DJ.png) | DJ | Djibouti
+![DK](png/DK.png) | DK | Denmark
+![DM](png/DM.png) | DM | Dominica
+![DO](png/DO.png) | DO | Dominican Republic
+![DZ](png/DZ.png) | DZ | Algeria
+![EC](png/EC.png) | EC | Ecuador
+![EE](png/EE.png) | EE | Estonia
+![EG](png/EG.png) | EG | Egypt
+![ER](png/ER.png) | ER | Eritrea
+![ES](png/ES.png) | ES | Spain
+![ET](png/ET.png) | ET | Ethiopia
+![FI](png/FI.png) | FI | Finland
+![FJ](png/FJ.png) | FJ | Fiji
+![FM](png/FM.png) | FM | Micronesia
+![FR](png/FR.png) | FR | France
+![GA](png/GA.png) | GA | Gabon
+![GB](png/GB.png) | GB | United Kingdom
+![GD](png/GD.png) | GD | Grenada
+![GE](png/GE.png) | GE | Georgia
+![GH](png/GH.png) | GH | Ghana
+![GM](png/GM.png) | GM | Gambia
+![GN](png/GN.png) | GN | Guinea
+![GQ](png/GQ.png) | GQ | Equatorial Guinea
+![GR](png/GR.png) | GR | Greece
+![GT](png/GT.png) | GT | Guatemala
+![GW](png/GW.png) | GW | Guinea-Bissau
+![GY](png/GY.png) | GY | Guyana
+![HK](png/HK.png) | HK | Hong Kong SAR China
+![HN](png/HN.png) | HN | Honduras
+![HR](png/HR.png) | HR | Croatia
+![HT](png/HT.png) | HT | Haiti
+![HU](png/HU.png) | HU | Hungary
+![ID](png/ID.png) | ID | Indonesia
+![IE](png/IE.png) | IE | Ireland
+![IL](png/IL.png) | IL | Israel
+![IN](png/IN.png) | IN | India
+![IQ](png/IQ.png) | IQ | Iraq
+![IR](png/IR.png) | IR | Iran
+![IS](png/IS.png) | IS | Iceland
+![IT](png/IT.png) | IT | Italy
+![JM](png/JM.png) | JM | Jamaica
+![JO](png/JO.png) | JO | Jordan
+![JP](png/JP.png) | JP | Japan
+![KE](png/KE.png) | KE | Kenya
+![KG](png/KG.png) | KG | Kyrgyzstan
+![KH](png/KH.png) | KH | Cambodia
+![KM](png/KM.png) | KM | Comoros
+![KN](png/KN.png) | KN | St. Kitts & Nevis
+![KP](png/KP.png) | KP | North Korea
+![KR](png/KR.png) | KR | South Korea
+![KW](png/KW.png) | KW | Kuwait
+![KY](png/KY.png) | KY | Cayman Islands
+![KZ](png/KZ.png) | KZ | Kazakhstan
+![LA](png/LA.png) | LA | Laos
+![LB](png/LB.png) | LB | Lebanon
+![LC](png/LC.png) | LC | St. Lucia
+![LI](png/LI.png) | LI | Liechtenstein
+![LK](png/LK.png) | LK | Sri Lanka
+![LR](png/LR.png) | LR | Liberia
+![LS](png/LS.png) | LS | Lesotho
+![LT](png/LT.png) | LT | Lithuania
+![LU](png/LU.png) | LU | Luxembourg
+![LV](png/LV.png) | LV | Latvia
+![LY](png/LY.png) | LY | Libya
+![MA](png/MA.png) | MA | Morocco
+![MC](png/MC.png) | MC | Monaco
+![MD](png/MD.png) | MD | Moldova
+![ME](png/ME.png) | ME | Montenegro
+![MG](png/MG.png) | MG | Madagascar
+![MK](png/MK.png) | MK | Macedonia
+![ML](png/ML.png) | ML | Mali
+![MM](png/MM.png) | MM | Myanmar (Burma)
+![MN](png/MN.png) | MN | Mongolia
+![MO](png/MO.png) | MO | Macau SAR China
+![MR](png/MR.png) | MR | Mauritania
+![MS](png/MS.png) | MS | Montserrat
+![MT](png/MT.png) | MT | Malta
+![MU](png/MU.png) | MU | Mauritius
+![MV](png/MV.png) | MV | Maldives
+![MW](png/MW.png) | MW | Malawi
+![MX](png/MX.png) | MX | Mexico
+![MY](png/MY.png) | MY | Malaysia
+![MZ](png/MZ.png) | MZ | Mozambique
+![NA](png/NA.png) | NA | Namibia
+![NE](png/NE.png) | NE | Niger
+![NG](png/NG.png) | NG | Nigeria
+![NI](png/NI.png) | NI | Nicaragua
+![NL](png/NL.png) | NL | Netherlands
+![NO](png/NO.png) | NO | Norway
+![NP](png/NP.png) | NP | Nepal
+![NZ](png/NZ.png) | NZ | New Zealand
+![OM](png/OM.png) | OM | Oman
+![PA](png/PA.png) | PA | Panama
+![PE](png/PE.png) | PE | Peru
+![PG](png/PG.png) | PG | Papua New Guinea
+![PH](png/PH.png) | PH | Philippines
+![PK](png/PK.png) | PK | Pakistan
+![PL](png/PL.png) | PL | Poland
+![PR](png/PR.png) | PR | Puerto Rico
+![PT](png/PT.png) | PT | Portugal
+![PW](png/PW.png) | PW | Palau
+![PY](png/PY.png) | PY | Paraguay
+![QA](png/QA.png) | QA | Qatar
+![RO](png/RO.png) | RO | Romania
+![RS](png/RS.png) | RS | Serbia
+![RU](png/RU.png) | RU | Russia
+![RW](png/RW.png) | RW | Rwanda
+![SA](png/SA.png) | SA | Saudi Arabia
+![SB](png/SB.png) | SB | Solomon Islands
+![SC](png/SC.png) | SC | Seychelles
+![SD](png/SD.png) | SD | Sudan
+![SE](png/SE.png) | SE | Sweden
+![SG](png/SG.png) | SG | Singapore
+![SI](png/SI.png) | SI | Slovenia
+![SK](png/SK.png) | SK | Slovakia
+![SL](png/SL.png) | SL | Sierra Leone
+![SM](png/SM.png) | SM | San Marino
+![SN](png/SN.png) | SN | Senegal
+![SO](png/SO.png) | SO | Somalia
+![SR](png/SR.png) | SR | Suriname
+![ST](png/ST.png) | ST | São Tomé & Príncipe
+![SV](png/SV.png) | SV | El Salvador
+![SY](png/SY.png) | SY | Syria
+![SZ](png/SZ.png) | SZ | Swaziland
+![TC](png/TC.png) | TC | Turks & Caicos Islands
+![TD](png/TD.png) | TD | Chad
+![TG](png/TG.png) | TG | Togo
+![TH](png/TH.png) | TH | Thailand
+![TJ](png/TJ.png) | TJ | Tajikistan
+![TL](png/TL.png) | TL | Timor-Leste
+![TM](png/TM.png) | TM | Turkmenistan
+![TN](png/TN.png) | TN | Tunisia
+![TO](png/TO.png) | TO | Tonga
+![TR](png/TR.png) | TR | Turkey
+![TT](png/TT.png) | TT | Trinidad & Tobago
+![TW](png/TW.png) | TW | Taiwan
+![TZ](png/TZ.png) | TZ | Tanzania
+![UA](png/UA.png) | UA | Ukraine
+![UG](png/UG.png) | UG | Uganda
+![US](png/US.png) | US | United States
+![UY](png/UY.png) | UY | Uruguay
+![UZ](png/UZ.png) | UZ | Uzbekistan
+![VC](png/VC.png) | VC | St. Vincent & Grenadines
+![VE](png/VE.png) | VE | Venezuela
+![VG](png/VG.png) | VG | British Virgin Islands
+![VN](png/VN.png) | VN | Vietnam
+![WS](png/WS.png) | WS | Samoa
+![YE](png/YE.png) | YE | Yemen
+![ZA](png/ZA.png) | ZA | South Africa
+![ZW](png/ZW.png) | ZW | Zimbabwe
 
 # Contribute
 Pull requests are most than welcome.
@@ -268,6 +297,11 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [1.2.0] - 2017-06-27
+- *grunt* integrated for better and cleaner approach.
+- *png* flags.
+- *readme* edited.
+
 ## [1.1.0] - 2017-06-26
 - *sass* better approach.
 - Better instructions in *readme*.
