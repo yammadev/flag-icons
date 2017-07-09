@@ -1,10 +1,12 @@
 // Wrapper
 module.exports = function(grunt) {
 
-  // Config
+  // Configuration
   grunt.initConfig({
+    // Package
     pkg: grunt.file.readJSON('package.json'),
 
+    // Banner
     banner: '/** \n' +
             ' * <%= pkg.name %> v.<%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) \n' +
             ' * <%= pkg.description %> \n' +
@@ -12,6 +14,7 @@ module.exports = function(grunt) {
             ' * Made by <%= pkg.author.name %> - <%= pkg.author.url %>. \n' +
             ' */',
 
+    // Use
     usebanner: {
       build: {
         options: {
@@ -25,6 +28,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Sass
     sass: {
       build: {
         options: {
@@ -43,6 +47,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Minify
     cssmin: {
       target: {
         files: [{
@@ -55,10 +60,12 @@ module.exports = function(grunt) {
       }
     },
 
+    // Check js
     jshint: {
       files: ['*.js'],
     },
 
+    // Png
     svg2png: {
       all: {
         files: [{
@@ -69,6 +76,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Check for changes
     watch: {
       sass: {
         files: ['sass/*.scss'],
@@ -90,9 +98,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-svg2png');
 
-  // grunt build
+  // $ grunt build
   grunt.registerTask('build', ['sass', 'cssmin', 'usebanner']);
 
-  // grunt | grunt default
+  // $ grunt | $ grunt default
   grunt.registerTask('default', ['watch']);
 };

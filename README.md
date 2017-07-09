@@ -1,64 +1,68 @@
-# Flag icons ![CO](png/CO.png)
-A beautiful `svg` + `png` + `sass` + `css` collection of countries flags.
+# flag-icons ![CO](png/CO.png)
+A beautiful `svg` + `png` + `sass` + `css` collection of countries flags by [Yefferson Marín](https://github.com/yammadev).
 
 # Icons
 All `sketch` files are in [madebybowtie/FlagKit](https://github.com/madebybowtie/FlagKit). Currently `svg` is just supported in [this](https://github.com/lucidlemon/FlagKit) fork, and it's still pending for integration.
 
-# Instructions
-## Simple css
-In `html` add the compiled `css` file.
+# Looking for brand icons?
+Check out [yammadev/brand-icons](https://github.com/yammadev/brand-icons).
+
+# How to?
+## Use it
+**1.** Add the compiled `css` file to your `html`.
 
 ```html
-<link rel="stylesheet" href="/css/flag-icons.css">
+  <!-- Use generated lib -->
+  <link rel="stylesheet" href="/css/flag-icons.css">
 
-<!-- Compressed -->
-<link rel="stylesheet" href="/css/flag-icons.min.css">
+  <!-- Compressed -->
+  <link rel="stylesheet" href="/css/flag-icons.min.css">
 ```
 
-Download the `svg` icons in your path and use `<i>` or `<span>` tags adding the class `flag-icons` followed of the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for each one. The result is a rectangular flag, however, the `square` class can be used if a squared one is required.
+**2.** Download the `svg` icons in your path and use `<i>` or `<span>` tags adding the class `flag-icons` followed of the flag `code` (look **Reference** for details) which is the [ISO 3166-1-alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for each one. The result is a rectangular flag, however, the `square` class can be used if a squared one is required.
 
 ```html
-<!-- Using <i> -->
-<i class="flag-icons CO"></i>
-<i class="flag-icons square CO"></i>
+  <!-- Using <i> -->
+  <i class="flag-icons CO"></i>
+  <i class="flag-icons square CO"></i>
 
-<!-- Using <span> -->
-<span class="flag-icons CO"></span>
-<span class="flag-icons square CO"></span>
+  <!-- Using <span> -->
+  <span class="flag-icons CO"></span>
+  <span class="flag-icons square CO"></span>
 ```
 
-You can also format the default size of the flag in a custom `css` file:
+**3.** You can also format the default size of the flag in a custom `css` file:
 
 ```css
-.flag-icons,    /* Format default */
-.rectangle {    /* Or use as new class */
-  height: 2em !important;
-  width: 2.66667em !important;
-  line-height: 2em !important;
-}
+  .flag-icons,    /* Format default wrapper */
+  .rectangle {    /* Or use as new class */
+    height: 2em !important;
+    width: 2.66667em !important;
+    line-height: 2em !important;
+  }
 
-.flag-icons,    /* Format default */
-.square,        /* Format default square class */
-.squared {      /* Or use as new class */
-  height: 2em !important;
-  width: 2em !important;
-  line-height: 2em !important;
-}
+  .flag-icons,    /* Format default wrapper */
+  .square,        /* Format default square class */
+  .squared {      /* Or use as new class */
+    height: 2em !important;
+    width: 2em !important;
+    line-height: 2em !important;
+  }
 ```
 
 ```html
-<!-- Rectangle -->
-<i class="flag-icons CO"></i>
-<i class="flag-icons rectangle CO"></i>
+  <!-- Rectangle -->
+  <i class="flag-icons CO"></i>
+  <i class="flag-icons rectangle CO"></i>
 
-<!-- Square -->
-<i class="flag-icons CO"></i>
-<i class="flag-icons square CO"></i>
-<i class="flag-icons squared CO"></i>
+  <!-- Square -->
+  <i class="flag-icons CO"></i>
+  <i class="flag-icons square CO"></i>
+  <i class="flag-icons squared CO"></i>
 ```
 
-## Autocompiled Sass
-First download the `svg` flags desired, then edit `sass/_variables.scss` as followed:
+## Auto generate
+**1.** In `svg` folder let just the files you need or desire. then edit `sass/_variables.scss` as followed:
 
 ```scss
   // ...
@@ -69,12 +73,26 @@ First download the `svg` flags desired, then edit `sass/_variables.scss` as foll
   );
 ```
 
-Where `'code'` represents the names of the flags downloaded. Finally you can compile by running in the terminal:
+Where `'code'` represents the names of the flags desired.
+
+**2.** Run in terminal:
 
 ```bash
-$ cd flag-icons
-$ grunt build
+  # Install dependencies
+  $ npm install
+
+  # Build!  
+  $ grunt build
 ```
+
+**3.** It will generate automatically:
+
+```
+  /css    <-- .css, .min.css
+  /sass   <-- .scss
+```
+
+**4.** Use as usual.
 
 # Reference
 ## Extras
@@ -290,6 +308,11 @@ $ grunt build
 | ![ZA](png/ZA.png) | ZA | South Africa |
 | ![ZW](png/ZW.png) | ZW | Zimbabwe |
 
+# Todo
+- Maybe an index website (?).
+- Pull `sketch` files from original source [madebybowtie/FlagKit](https://github.com/madebybowtie/FlagKit) using `grunt-git` instead.
+- After pull, convert them in `svg` and `png` format automatically.
+
 # Contribute
 Pull requests are most than welcome.
 
@@ -297,30 +320,37 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [1.2.4] - 2017-07-09
+- Code cleaning.
+- Readme edited.
+
 ## [1.2.3] - 2017-06-27
-- *readme* edited.
+- Readme edited.
+
+## [1.2.3] - 2017-06-27
+- Readme edited.
 
 ## [1.2.2] - 2017-06-27
-- Link to *ISO 3166-1-alpha-2 code* updated.
-- *readme* edited.
+- Link to **ISO 3166-1-alpha-2 code** updated.
+- Readme edited.
 
 ## [1.2.1] - 2017-06-27
-- *readme* edited.
+- Readme edited.
 
 ## [1.2.0] - 2017-06-27
-- *grunt* integrated for better and cleaner approach.
-- *png* flags.
-- *readme* edited.
+- `grunt` integrated for better and cleaner approach.
+- `png` flags.
+- Readme edited.
 
 ## [1.1.0] - 2017-06-26
-- *sass* better approach.
-- Better instructions in *readme*.
+- `sass` better approach.
+- Better instructions in Readme.
 
 ## [1.0.0] - 2017-06-26
-- *svg* flags.
-- *sass* boilerplate.
-- *css* libraries.
+- `svg` flags.
+- `sass` boilerplate.
+- `css` libraries.
 
 ## [0.0.0] - 2017-06-26
 - Initial commit.
-- *readme* + *license*.
+- Readme + license.

@@ -1,26 +1,17 @@
 {
   "name": "flag-icons",
+  "version": "1.2.4",
   "description": "A beautiful svg + png + sass + css collection of countries flags.",
-  "version": "1.2.3",
-  "author": {
-    "name": "Yefferson Marín",
-    "email": "yefferson.marin@gmail.com",
-    "url": "https://github.com/yammadev"
-  },
-  "license": "MIT",
-  "repository": "https://github.com/yammadev/flag-icons.git",
-  "homepage": "https://yammadev.github.io/flag-icons/",
+  "main": "Gruntfile.js",
   "scripts": {
-    "clean": "rm -rf node_modules"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npm run clean-modules && npm run clean-debug",
+    "clean-modules": "rm -rf node_modules",
+    "clean-debug": "rm -rf npm-debug.log npm-debug.log.*"
   },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-banner": "^0.6.0",
-    "grunt-contrib-cssmin": "^2.2.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-svg2png": "^0.2.7"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yammadev/flag-icons.git"
   },
   "keywords": [
     "svg",
@@ -31,5 +22,24 @@
     "countries",
     "grunt",
     "npm"
-  ]
+  ],
+  "author": {
+    "name": "Yefferson Marín",
+    "email": "yefferson.marin@gmail.com",
+    "url": "https://github.com/yammadev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yammadev/flag-icons/issues"
+  },
+  "homepage": "https://github.com/yammadev/flag-icons#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-svg2png": "^0.2.7"
+  }
 }
