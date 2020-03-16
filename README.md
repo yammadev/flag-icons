@@ -320,6 +320,9 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [2.0.3] - 2020-03-16
+- Still trying to solve tables problem in `github` page view.
+
 ## [2.0.2] - 2020-03-16
 - Trying to solve tables problem in `github` page view.
 
