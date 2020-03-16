@@ -2,3 +2,4 @@
 npm-debug.log
 npm-debug.log.*
 test.html
+package-lock.json
