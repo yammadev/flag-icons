@@ -96,8 +96,8 @@ Where `'code'` represents the names of the flags desired.
 
 # Reference
 ## Extras
-| Flag  | Code  | Region |
-| :---: | :---: | :----- |
+| Flag               | Code          | Region |
+|:-------------------|:--------------|:-------|
 |![AD](png/EU.png)   | EU    | European Union |
 |![AE](png/WW.png)   | WW    | World |
 |![CNA](png/CNA.png) | CNA   | North America |
@@ -108,8 +108,8 @@ Where `'code'` represents the names of the flags desired.
 |![COC](png/COC.png) | COC   | Oceania |
 
 ## Countries
-| Flag  | Code  | Country |
-| :---: | :---: | :----- |
+| Flag               | Code          | Region |
+|:-------------------|:--------------|:-------|
 | ![AD](png/AD.png) | AD | Andorra |
 | ![AE](png/AE.png) | AE | United Arab Emirates |
 | ![AF](png/AF.png) | AF | Afghanistan |
@@ -320,6 +320,12 @@ Pull requests are most than welcome.
 Released under the MIT license.
 
 # Change Log
+## [2.0.0] - 2020-03-16
+- `Github` page added using `jekyll-theme-cayman`.
+- Tables modified in `readme`.
+- Dependencies updated.
+- Security issues solved.
+
 ## [1.2.4] - 2017-07-09
 - Code cleaning.
 - Readme edited.

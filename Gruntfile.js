@@ -32,9 +32,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         options: {
-          sourcemap: 'none',
           style: 'expanded',
-          noCache: true
         },
 
         files: [{

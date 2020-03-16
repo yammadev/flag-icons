@@ -1,9 +1,10 @@
-/**
- * flag-icons v.1.2.4 (09-07-2017)
- * A beautiful svg + png + sass + css collection of countries flags.
- * Visit https://github.com/yammadev/flag-icons#readme for details.
- * Made by Yefferson Marín - https://github.com/yammadev.
+/** 
+ * flag-icons v.2.0.0 (16-03-2020) 
+ * A beautiful svg + png + sass + css collection of countries flags. 
+ * Visit https://github.com/yammadev/flag-icons#readme for details. 
+ * Made by Yefferson Marín - https://github.com/yammadev. 
  */
+@charset "UTF-8";
 span.flag-icons, i.flag-icons {
   background-size: contain;
   background-position: center;
@@ -12,14 +13,14 @@ span.flag-icons, i.flag-icons {
   display: inline-block;
   line-height: 1em;
   height: 1em;
-  width: 1.33333em;
+  width: 1.3333333333em;
 }
 span.flag-icons.square, i.flag-icons.square {
   height: 1em;
   width: 1em;
 }
 span.flag-icons:before, i.flag-icons:before {
-  content: '\00a0';
+  content: " ";
 }
 span.flag-icons.EU, i.flag-icons.EU {
   background-image: url(../svg/EU.svg);
@@ -636,3 +637,5 @@ span.flag-icons.ZA, i.flag-icons.ZA {
 span.flag-icons.ZW, i.flag-icons.ZW {
   background-image: url(../svg/ZW.svg);
 }
+
+/*# sourceMappingURL=flag-icons.css.map */
