@@ -1,6 +1,6 @@
 /** 
- * flag-icons v.2.0.3 (16-03-2020) 
- * A beautiful svg + png + sass + css collection of countries flags. 
+ * flag-icons v.3.0.0 (14-04-2020) 
+ * A beautiful svg + png + sass + css collection of 261 flags. 
  * Visit https://github.com/yammadev/flag-icons#readme for details. 
  * Made by Yefferson Marín - https://github.com/yammadev. 
  */
@@ -22,29 +22,29 @@ span.flag-icons.square, i.flag-icons.square {
 span.flag-icons:before, i.flag-icons:before {
   content: " ";
 }
-span.flag-icons.EU, i.flag-icons.EU {
-  background-image: url(../svg/EU.svg);
-}
-span.flag-icons.WW, i.flag-icons.WW {
-  background-image: url(../svg/WW.svg);
-}
-span.flag-icons.CNA, i.flag-icons.CNA {
-  background-image: url(../svg/CNA.svg);
-}
-span.flag-icons.CSA, i.flag-icons.CSA {
-  background-image: url(../svg/CSA.svg);
-}
-span.flag-icons.CEU, i.flag-icons.CEU {
-  background-image: url(../svg/CEU.svg);
-}
 span.flag-icons.CAF, i.flag-icons.CAF {
   background-image: url(../svg/CAF.svg);
 }
 span.flag-icons.CAS, i.flag-icons.CAS {
   background-image: url(../svg/CAS.svg);
 }
+span.flag-icons.CNA, i.flag-icons.CNA {
+  background-image: url(../svg/CNA.svg);
+}
 span.flag-icons.COC, i.flag-icons.COC {
   background-image: url(../svg/COC.svg);
+}
+span.flag-icons.CSA, i.flag-icons.CSA {
+  background-image: url(../svg/CSA.svg);
+}
+span.flag-icons.EU, i.flag-icons.EU {
+  background-image: url(../svg/EU.svg);
+}
+span.flag-icons.WW, i.flag-icons.WW {
+  background-image: url(../svg/WW.svg);
+}
+span.flag-icons.LGBT, i.flag-icons.LGBT {
+  background-image: url(../svg/LGBT.svg);
 }
 span.flag-icons.AD, i.flag-icons.AD {
   background-image: url(../svg/AD.svg);
@@ -73,11 +73,17 @@ span.flag-icons.AO, i.flag-icons.AO {
 span.flag-icons.AR, i.flag-icons.AR {
   background-image: url(../svg/AR.svg);
 }
+span.flag-icons.AS, i.flag-icons.AS {
+  background-image: url(../svg/AS.svg);
+}
 span.flag-icons.AT, i.flag-icons.AT {
   background-image: url(../svg/AT.svg);
 }
 span.flag-icons.AU, i.flag-icons.AU {
   background-image: url(../svg/AU.svg);
+}
+span.flag-icons.AW, i.flag-icons.AW {
+  background-image: url(../svg/AW.svg);
 }
 span.flag-icons.AX, i.flag-icons.AX {
   background-image: url(../svg/AX.svg);
@@ -112,6 +118,9 @@ span.flag-icons.BI, i.flag-icons.BI {
 span.flag-icons.BJ, i.flag-icons.BJ {
   background-image: url(../svg/BJ.svg);
 }
+span.flag-icons.BL, i.flag-icons.BL {
+  background-image: url(../svg/BL.svg);
+}
 span.flag-icons.BM, i.flag-icons.BM {
   background-image: url(../svg/BM.svg);
 }
@@ -130,6 +139,9 @@ span.flag-icons.BS, i.flag-icons.BS {
 span.flag-icons.BT, i.flag-icons.BT {
   background-image: url(../svg/BT.svg);
 }
+span.flag-icons.BV, i.flag-icons.BV {
+  background-image: url(../svg/BV.svg);
+}
 span.flag-icons.BW, i.flag-icons.BW {
   background-image: url(../svg/BW.svg);
 }
@@ -141,6 +153,9 @@ span.flag-icons.BZ, i.flag-icons.BZ {
 }
 span.flag-icons.CA, i.flag-icons.CA {
   background-image: url(../svg/CA.svg);
+}
+span.flag-icons.CC, i.flag-icons.CC {
+  background-image: url(../svg/CC.svg);
 }
 span.flag-icons.CD, i.flag-icons.CD {
   background-image: url(../svg/CD.svg);
@@ -156,6 +171,9 @@ span.flag-icons.CH, i.flag-icons.CH {
 }
 span.flag-icons.CI, i.flag-icons.CI {
   background-image: url(../svg/CI.svg);
+}
+span.flag-icons.CK, i.flag-icons.CK {
+  background-image: url(../svg/CK.svg);
 }
 span.flag-icons.CL, i.flag-icons.CL {
   background-image: url(../svg/CL.svg);
@@ -177,6 +195,12 @@ span.flag-icons.CU, i.flag-icons.CU {
 }
 span.flag-icons.CV, i.flag-icons.CV {
   background-image: url(../svg/CV.svg);
+}
+span.flag-icons.CW, i.flag-icons.CW {
+  background-image: url(../svg/CW.svg);
+}
+span.flag-icons.CX, i.flag-icons.CX {
+  background-image: url(../svg/CX.svg);
 }
 span.flag-icons.CY, i.flag-icons.CY {
   background-image: url(../svg/CY.svg);
@@ -220,20 +244,44 @@ span.flag-icons.ES, i.flag-icons.ES {
 span.flag-icons.ET, i.flag-icons.ET {
   background-image: url(../svg/ET.svg);
 }
+span.flag-icons.EU, i.flag-icons.EU {
+  background-image: url(../svg/EU.svg);
+}
 span.flag-icons.FI, i.flag-icons.FI {
   background-image: url(../svg/FI.svg);
 }
 span.flag-icons.FJ, i.flag-icons.FJ {
   background-image: url(../svg/FJ.svg);
 }
+span.flag-icons.FK, i.flag-icons.FK {
+  background-image: url(../svg/FK.svg);
+}
 span.flag-icons.FM, i.flag-icons.FM {
   background-image: url(../svg/FM.svg);
+}
+span.flag-icons.FO, i.flag-icons.FO {
+  background-image: url(../svg/FO.svg);
 }
 span.flag-icons.FR, i.flag-icons.FR {
   background-image: url(../svg/FR.svg);
 }
 span.flag-icons.GA, i.flag-icons.GA {
   background-image: url(../svg/GA.svg);
+}
+span.flag-icons.GB-ENG, i.flag-icons.GB-ENG {
+  background-image: url(../svg/GB-ENG.svg);
+}
+span.flag-icons.GB-NIR, i.flag-icons.GB-NIR {
+  background-image: url(../svg/GB-NIR.svg);
+}
+span.flag-icons.GB-SCT, i.flag-icons.GB-SCT {
+  background-image: url(../svg/GB-SCT.svg);
+}
+span.flag-icons.GB-WLS, i.flag-icons.GB-WLS {
+  background-image: url(../svg/GB-WLS.svg);
+}
+span.flag-icons.GB-ZET, i.flag-icons.GB-ZET {
+  background-image: url(../svg/GB-ZET.svg);
 }
 span.flag-icons.GB, i.flag-icons.GB {
   background-image: url(../svg/GB.svg);
@@ -244,8 +292,20 @@ span.flag-icons.GD, i.flag-icons.GD {
 span.flag-icons.GE, i.flag-icons.GE {
   background-image: url(../svg/GE.svg);
 }
+span.flag-icons.GF, i.flag-icons.GF {
+  background-image: url(../svg/GF.svg);
+}
+span.flag-icons.GG, i.flag-icons.GG {
+  background-image: url(../svg/GG.svg);
+}
 span.flag-icons.GH, i.flag-icons.GH {
   background-image: url(../svg/GH.svg);
+}
+span.flag-icons.GI, i.flag-icons.GI {
+  background-image: url(../svg/GI.svg);
+}
+span.flag-icons.GL, i.flag-icons.GL {
+  background-image: url(../svg/GL.svg);
 }
 span.flag-icons.GM, i.flag-icons.GM {
   background-image: url(../svg/GM.svg);
@@ -253,14 +313,23 @@ span.flag-icons.GM, i.flag-icons.GM {
 span.flag-icons.GN, i.flag-icons.GN {
   background-image: url(../svg/GN.svg);
 }
+span.flag-icons.GP, i.flag-icons.GP {
+  background-image: url(../svg/GP.svg);
+}
 span.flag-icons.GQ, i.flag-icons.GQ {
   background-image: url(../svg/GQ.svg);
 }
 span.flag-icons.GR, i.flag-icons.GR {
   background-image: url(../svg/GR.svg);
 }
+span.flag-icons.GS, i.flag-icons.GS {
+  background-image: url(../svg/GS.svg);
+}
 span.flag-icons.GT, i.flag-icons.GT {
   background-image: url(../svg/GT.svg);
+}
+span.flag-icons.GU, i.flag-icons.GU {
+  background-image: url(../svg/GU.svg);
 }
 span.flag-icons.GW, i.flag-icons.GW {
   background-image: url(../svg/GW.svg);
@@ -270,6 +339,9 @@ span.flag-icons.GY, i.flag-icons.GY {
 }
 span.flag-icons.HK, i.flag-icons.HK {
   background-image: url(../svg/HK.svg);
+}
+span.flag-icons.HM, i.flag-icons.HM {
+  background-image: url(../svg/HM.svg);
 }
 span.flag-icons.HN, i.flag-icons.HN {
   background-image: url(../svg/HN.svg);
@@ -292,8 +364,14 @@ span.flag-icons.IE, i.flag-icons.IE {
 span.flag-icons.IL, i.flag-icons.IL {
   background-image: url(../svg/IL.svg);
 }
+span.flag-icons.IM, i.flag-icons.IM {
+  background-image: url(../svg/IM.svg);
+}
 span.flag-icons.IN, i.flag-icons.IN {
   background-image: url(../svg/IN.svg);
+}
+span.flag-icons.IO, i.flag-icons.IO {
+  background-image: url(../svg/IO.svg);
 }
 span.flag-icons.IQ, i.flag-icons.IQ {
   background-image: url(../svg/IQ.svg);
@@ -306,6 +384,9 @@ span.flag-icons.IS, i.flag-icons.IS {
 }
 span.flag-icons.IT, i.flag-icons.IT {
   background-image: url(../svg/IT.svg);
+}
+span.flag-icons.JE, i.flag-icons.JE {
+  background-image: url(../svg/JE.svg);
 }
 span.flag-icons.JM, i.flag-icons.JM {
   background-image: url(../svg/JM.svg);
@@ -324,6 +405,9 @@ span.flag-icons.KG, i.flag-icons.KG {
 }
 span.flag-icons.KH, i.flag-icons.KH {
   background-image: url(../svg/KH.svg);
+}
+span.flag-icons.KI, i.flag-icons.KI {
+  background-image: url(../svg/KI.svg);
 }
 span.flag-icons.KM, i.flag-icons.KM {
   background-image: url(../svg/KM.svg);
@@ -391,8 +475,14 @@ span.flag-icons.MD, i.flag-icons.MD {
 span.flag-icons.ME, i.flag-icons.ME {
   background-image: url(../svg/ME.svg);
 }
+span.flag-icons.MF, i.flag-icons.MF {
+  background-image: url(../svg/MF.svg);
+}
 span.flag-icons.MG, i.flag-icons.MG {
   background-image: url(../svg/MG.svg);
+}
+span.flag-icons.MH, i.flag-icons.MH {
+  background-image: url(../svg/MH.svg);
 }
 span.flag-icons.MK, i.flag-icons.MK {
   background-image: url(../svg/MK.svg);
@@ -408,6 +498,12 @@ span.flag-icons.MN, i.flag-icons.MN {
 }
 span.flag-icons.MO, i.flag-icons.MO {
   background-image: url(../svg/MO.svg);
+}
+span.flag-icons.MP, i.flag-icons.MP {
+  background-image: url(../svg/MP.svg);
+}
+span.flag-icons.MQ, i.flag-icons.MQ {
+  background-image: url(../svg/MQ.svg);
 }
 span.flag-icons.MR, i.flag-icons.MR {
   background-image: url(../svg/MR.svg);
@@ -439,8 +535,14 @@ span.flag-icons.MZ, i.flag-icons.MZ {
 span.flag-icons.NA, i.flag-icons.NA {
   background-image: url(../svg/NA.svg);
 }
+span.flag-icons.NC, i.flag-icons.NC {
+  background-image: url(../svg/NC.svg);
+}
 span.flag-icons.NE, i.flag-icons.NE {
   background-image: url(../svg/NE.svg);
+}
+span.flag-icons.NF, i.flag-icons.NF {
+  background-image: url(../svg/NF.svg);
 }
 span.flag-icons.NG, i.flag-icons.NG {
   background-image: url(../svg/NG.svg);
@@ -457,6 +559,12 @@ span.flag-icons.NO, i.flag-icons.NO {
 span.flag-icons.NP, i.flag-icons.NP {
   background-image: url(../svg/NP.svg);
 }
+span.flag-icons.NR, i.flag-icons.NR {
+  background-image: url(../svg/NR.svg);
+}
+span.flag-icons.NU, i.flag-icons.NU {
+  background-image: url(../svg/NU.svg);
+}
 span.flag-icons.NZ, i.flag-icons.NZ {
   background-image: url(../svg/NZ.svg);
 }
@@ -468,6 +576,9 @@ span.flag-icons.PA, i.flag-icons.PA {
 }
 span.flag-icons.PE, i.flag-icons.PE {
   background-image: url(../svg/PE.svg);
+}
+span.flag-icons.PF, i.flag-icons.PF {
+  background-image: url(../svg/PF.svg);
 }
 span.flag-icons.PG, i.flag-icons.PG {
   background-image: url(../svg/PG.svg);
@@ -481,8 +592,17 @@ span.flag-icons.PK, i.flag-icons.PK {
 span.flag-icons.PL, i.flag-icons.PL {
   background-image: url(../svg/PL.svg);
 }
+span.flag-icons.PM, i.flag-icons.PM {
+  background-image: url(../svg/PM.svg);
+}
+span.flag-icons.PN, i.flag-icons.PN {
+  background-image: url(../svg/PN.svg);
+}
 span.flag-icons.PR, i.flag-icons.PR {
   background-image: url(../svg/PR.svg);
+}
+span.flag-icons.PS, i.flag-icons.PS {
+  background-image: url(../svg/PS.svg);
 }
 span.flag-icons.PT, i.flag-icons.PT {
   background-image: url(../svg/PT.svg);
@@ -495,6 +615,9 @@ span.flag-icons.PY, i.flag-icons.PY {
 }
 span.flag-icons.QA, i.flag-icons.QA {
   background-image: url(../svg/QA.svg);
+}
+span.flag-icons.RE, i.flag-icons.RE {
+  background-image: url(../svg/RE.svg);
 }
 span.flag-icons.RO, i.flag-icons.RO {
   background-image: url(../svg/RO.svg);
@@ -526,8 +649,14 @@ span.flag-icons.SE, i.flag-icons.SE {
 span.flag-icons.SG, i.flag-icons.SG {
   background-image: url(../svg/SG.svg);
 }
+span.flag-icons.SH, i.flag-icons.SH {
+  background-image: url(../svg/SH.svg);
+}
 span.flag-icons.SI, i.flag-icons.SI {
   background-image: url(../svg/SI.svg);
+}
+span.flag-icons.SJ, i.flag-icons.SJ {
+  background-image: url(../svg/SJ.svg);
 }
 span.flag-icons.SK, i.flag-icons.SK {
   background-image: url(../svg/SK.svg);
@@ -547,11 +676,17 @@ span.flag-icons.SO, i.flag-icons.SO {
 span.flag-icons.SR, i.flag-icons.SR {
   background-image: url(../svg/SR.svg);
 }
+span.flag-icons.SS, i.flag-icons.SS {
+  background-image: url(../svg/SS.svg);
+}
 span.flag-icons.ST, i.flag-icons.ST {
   background-image: url(../svg/ST.svg);
 }
 span.flag-icons.SV, i.flag-icons.SV {
   background-image: url(../svg/SV.svg);
+}
+span.flag-icons.SX, i.flag-icons.SX {
+  background-image: url(../svg/SX.svg);
 }
 span.flag-icons.SY, i.flag-icons.SY {
   background-image: url(../svg/SY.svg);
@@ -565,6 +700,9 @@ span.flag-icons.TC, i.flag-icons.TC {
 span.flag-icons.TD, i.flag-icons.TD {
   background-image: url(../svg/TD.svg);
 }
+span.flag-icons.TF, i.flag-icons.TF {
+  background-image: url(../svg/TF.svg);
+}
 span.flag-icons.TG, i.flag-icons.TG {
   background-image: url(../svg/TG.svg);
 }
@@ -573,6 +711,9 @@ span.flag-icons.TH, i.flag-icons.TH {
 }
 span.flag-icons.TJ, i.flag-icons.TJ {
   background-image: url(../svg/TJ.svg);
+}
+span.flag-icons.TK, i.flag-icons.TK {
+  background-image: url(../svg/TK.svg);
 }
 span.flag-icons.TL, i.flag-icons.TL {
   background-image: url(../svg/TL.svg);
@@ -592,6 +733,9 @@ span.flag-icons.TR, i.flag-icons.TR {
 span.flag-icons.TT, i.flag-icons.TT {
   background-image: url(../svg/TT.svg);
 }
+span.flag-icons.TV, i.flag-icons.TV {
+  background-image: url(../svg/TV.svg);
+}
 span.flag-icons.TW, i.flag-icons.TW {
   background-image: url(../svg/TW.svg);
 }
@@ -604,6 +748,12 @@ span.flag-icons.UA, i.flag-icons.UA {
 span.flag-icons.UG, i.flag-icons.UG {
   background-image: url(../svg/UG.svg);
 }
+span.flag-icons.UM, i.flag-icons.UM {
+  background-image: url(../svg/UM.svg);
+}
+span.flag-icons.US-CA, i.flag-icons.US-CA {
+  background-image: url(../svg/US-CA.svg);
+}
 span.flag-icons.US, i.flag-icons.US {
   background-image: url(../svg/US.svg);
 }
@@ -612,6 +762,9 @@ span.flag-icons.UY, i.flag-icons.UY {
 }
 span.flag-icons.UZ, i.flag-icons.UZ {
   background-image: url(../svg/UZ.svg);
+}
+span.flag-icons.VA, i.flag-icons.VA {
+  background-image: url(../svg/VA.svg);
 }
 span.flag-icons.VC, i.flag-icons.VC {
   background-image: url(../svg/VC.svg);
@@ -622,17 +775,35 @@ span.flag-icons.VE, i.flag-icons.VE {
 span.flag-icons.VG, i.flag-icons.VG {
   background-image: url(../svg/VG.svg);
 }
+span.flag-icons.VI, i.flag-icons.VI {
+  background-image: url(../svg/VI.svg);
+}
 span.flag-icons.VN, i.flag-icons.VN {
   background-image: url(../svg/VN.svg);
+}
+span.flag-icons.VU, i.flag-icons.VU {
+  background-image: url(../svg/VU.svg);
+}
+span.flag-icons.WF, i.flag-icons.WF {
+  background-image: url(../svg/WF.svg);
 }
 span.flag-icons.WS, i.flag-icons.WS {
   background-image: url(../svg/WS.svg);
 }
+span.flag-icons.XK, i.flag-icons.XK {
+  background-image: url(../svg/XK.svg);
+}
 span.flag-icons.YE, i.flag-icons.YE {
   background-image: url(../svg/YE.svg);
 }
+span.flag-icons.YT, i.flag-icons.YT {
+  background-image: url(../svg/YT.svg);
+}
 span.flag-icons.ZA, i.flag-icons.ZA {
   background-image: url(../svg/ZA.svg);
+}
+span.flag-icons.ZM, i.flag-icons.ZM {
+  background-image: url(../svg/ZM.svg);
 }
 span.flag-icons.ZW, i.flag-icons.ZW {
   background-image: url(../svg/ZW.svg);

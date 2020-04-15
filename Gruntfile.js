@@ -56,49 +56,17 @@ module.exports = function(grunt) {
           ext: '.min.css'
         }]
       }
-    },
-
-    // Check js
-    jshint: {
-      files: ['*.js'],
-    },
-
-    // Png
-    svg2png: {
-      all: {
-        files: [{
-          cwd: 'svg/',
-          src: ['**/*.svg'],
-          dest: 'png/'
-        }]
-      }
-    },
-
-    // Check for changes
-    watch: {
-      sass: {
-        files: ['sass/*.scss'],
-        tasks: ['build']
-      },
-
-      js: {
-        files: ['*.js'],
-        tasks: ['jshint']
-      }
     }
   });
 
   // Load
   grunt.loadNpmTasks('grunt-banner');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-svg2png');
 
   // $ grunt build
   grunt.registerTask('build', ['sass', 'cssmin', 'usebanner']);
 
   // $ grunt | $ grunt default
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['build']);
 };
