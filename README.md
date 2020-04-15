@@ -402,6 +402,10 @@ All notable changes to this project are documented in this part of the file. The
 - **Fixed for** any bug fixes.
 - **Security** in case of vulnerabilities.
 
+### [3.0.0] - 2020-04-15
+#### Modified
+- Title + Description in `_config.yml`.
+
 ### [3.0.0] - 2020-04-14
 #### Added
 - More flags! (`svg` and `png`)
