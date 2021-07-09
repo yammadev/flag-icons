@@ -2,7 +2,7 @@
 @import "countries";
 
 // Change or use as your needs.
-$path: '../svg' !default;
+$flag-icons-path: '../svg' !default;
 
 // Load'em all!
-$flags: join($extras, $countries, comma);
+$flag-icons-flags: join($flag-icons-extras, $flag-icons-countries, comma) !default;
