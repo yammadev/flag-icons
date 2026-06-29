@@ -27,9 +27,9 @@ span, i {
     }
 
     // Flags
-    @each $flag in $flags {
+    @each $flag in $flag-icons-flags {
       &.#{$flag} {
-        background-image: url(#{$path}/#{$flag}.svg);
+        background-image: url(#{$flag-icons-path}/#{$flag}.svg);
       }
     }
   }
