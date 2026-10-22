@@ -1,8 +1,32 @@
-@import "extras";
-@import "countries";
+// =============================================================================
+// flag-icons · settings
+// Every variable is !default, so it can be overridden either way:
+//
+//   // Module system (recommended)
+//   @use "flag-icons/sass/flag-icons" with ($flag-icons-path: "/assets/flags");
+//
+//   // Legacy @import (still supported)
+//   $flag-icons-path: "/assets/flags";
+//   @import "flag-icons/sass/flag-icons";
+// =============================================================================
 
-// Change or use as your needs.
-$flag-icons-path: '../svg' !default;
+@use "sass:list";
+@use "sass:math";
 
-// Load'em all!
-$flag-icons-flags: join($flag-icons-extras, $flag-icons-countries, comma) !default;
+@forward "extras";
+@forward "countries";
+@use "extras" as *;
+@use "countries" as *;
+
+// Folder (relative to the compiled .css) where the .svg files live.
+$flag-icons-path: "../svg" !default;
+
+// Flags that get a class. Override with a shorter list to ship a subset.
+$flag-icons-flags: list.join($flag-icons-extras, $flag-icons-countries, comma) !default;
+
+// Base class name used in markup: <i class="flag-icons CO"></i>
+$flag-icons-class: "flag-icons" !default;
+
+// Default box size. Flags are 4:3 rectangles unless `.square` is added.
+$flag-icons-height: 1em !default;
+$flag-icons-ratio: math.div(4, 3) !default;

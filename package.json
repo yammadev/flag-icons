@@ -1,27 +1,40 @@
 {
-  "name": "flag-icons",
-  "version": "3.0.0",
-  "description": "A beautiful svg + png + sass + css collection of 261 flags.",
-  "main": "Gruntfile.js",
+  "name": "@yammadev/flag-icons",
+  "version": "3.1.0",
+  "description": "A beautiful svg + png + sass + css collection of 264 flags.",
+  "main": "flags.json",
+  "style": "css/flag-icons.css",
+  "sass": "sass/flag-icons.scss",
+  "files": [
+    "css",
+    "png",
+    "sass",
+    "svg",
+    "flags.json"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "npm run clean-modules && npm run clean-debug",
-    "clean-modules": "rm -rf node_modules",
-    "clean-debug": "rm -rf npm-debug.log npm-debug.log.*"
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run generate && node scripts/build.mjs",
+    "svg": "node scripts/svg.mjs",
+    "png": "node scripts/png.mjs",
+    "assets": "npm run svg && npm run png",
+    "test": "node --test",
+    "prepublishOnly": "npm run build && npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yammadev/flag-icons.git"
   },
   "keywords": [
+    "flags",
+    "flag-icons",
+    "countries",
+    "iso-3166",
     "svg",
     "png",
     "sass",
     "css",
-    "icons",
-    "countries",
-    "grunt",
-    "npm"
+    "icons"
   ],
   "author": {
     "name": "Yefferson Marín",
@@ -32,11 +45,17 @@
   "bugs": {
     "url": "https://github.com/yammadev/flag-icons/issues"
   },
-  "homepage": "https://github.com/yammadev/flag-icons#readme",
+  "homepage": "https://yammadev.github.io/flag-icons/",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
-    "grunt": "^1.1.0",
-    "grunt-banner": "^0.6.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-sass": "^1.0.0"
+    "jsdom": "^25.0.1",
+    "sass": "^1.106.1",
+    "sharp": "^0.35.5",
+    "svgo": "^3.3.5"
   }
 }

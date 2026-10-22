@@ -1,36 +1,36 @@
-// Variables
-@import "variables";
+// =============================================================================
+// flag-icons
+// Builds `.flag-icons` + one class per flag code (ISO 3166-1 alpha-2 and extras).
+// Markup: <i class="flag-icons CO"></i> · <span class="flag-icons square CO"></span>
+// =============================================================================
 
-// Flag icons
-span, i {
-  &.flag-icons {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
-    line-height: 1em;
+@forward "variables";
+@use "variables" as *;
+@use "sass:string";
+@use "mixins";
 
-    // Rectangle
-    height: 1em;
-    width: (4 / 3) * 1em;
+.#{$flag-icons-class} {
+  @include mixins.base;
 
-    // Square
-    &.square {
-      height: 1em;
-      width: 1em;
-    }
+  // Square box. The flag keeps its proportions (letterboxed).
+  &.square {
+    width: $flag-icons-height;
+  }
 
-    // Non-breaking space
-    &:before {
-      content: '\00a0';
-    }
+  // Fill the whole box, cropping the sides if needed (useful with `.square`).
+  &.fill {
+    background-size: cover;
+  }
 
-    // Flags
-    @each $flag in $flag-icons-flags {
-      &.#{$flag} {
-        background-image: url(#{$flag-icons-path}/#{$flag}.svg);
-      }
+  // Non-breaking space so the element has a baseline even when empty.
+  // Kept escaped so the CSS stays pure ASCII (no @charset / BOM needed).
+  &::before {
+    content: string.unquote('"\\00a0"');
+  }
+
+  @each $flag in $flag-icons-flags {
+    &.#{$flag} {
+      @include mixins.image($flag);
     }
   }
 }
