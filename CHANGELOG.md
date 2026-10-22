@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/) and the project follows
 [Semantic Versioning](https://semver.org/).
 
+## [3.1.1] - 2026-10-22
+
+### Changed
+- Releases are published to npm with Trusted Publishing (OIDC) instead of a token.
+
 ## [3.1.0] - 2026-10-22
 
 Fully backwards compatible with 3.0.0: same files, paths and classes.
@@ -74,5 +79,6 @@ Fully backwards compatible with 3.0.0: same files, paths and classes.
 ### Added
 - `svg` flags, `sass` boilerplate and `css` libraries.
 
+[3.1.1]: https://github.com/yammadev/flag-icons/compare/v3.1.0...v3.1.1
 [3.1.0]: https://github.com/yammadev/flag-icons/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/yammadev/flag-icons/releases/tag/v3.0.0

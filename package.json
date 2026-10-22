@@ -1,6 +1,6 @@
 {
   "name": "@yammadev/flag-icons",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "A beautiful svg + png + sass + css collection of 264 flags.",
   "main": "flags.json",
   "style": "css/flag-icons.css",
