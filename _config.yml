@@ -1,4 +1,11 @@
+title: flag-icons
+description: A beautiful svg + png + sass + css collection of 264 flags.
 theme: jekyll-theme-cayman
 markdown: GFM
-title: flag-icons
-description: A beautiful svg + png + sass + css collection of 261 flags.
+exclude:
+  - node_modules
+  - scripts
+  - test
+  - sass
+  - package.json
+  - package-lock.json

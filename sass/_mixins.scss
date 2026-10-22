@@ -1,0 +1,32 @@
+// =============================================================================
+// flag-icons · mixins
+// Use a flag on any selector without the generated classes:
+//
+//   @use "flag-icons/sass/mixins" as fi;
+//   .lang-es::before { @include fi.flag("ES"); }
+// =============================================================================
+
+@use "variables" as *;
+
+// Box + background shared by every flag.
+@mixin base($height: $flag-icons-height, $ratio: $flag-icons-ratio) {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  line-height: $height;
+  height: $height;
+  width: $ratio * $height;
+}
+
+// Only the image of one flag.
+@mixin image($code, $path: $flag-icons-path) {
+  background-image: url("#{$path}/#{$code}.svg");
+}
+
+// Complete, standalone flag (box + image).
+@mixin flag($code, $height: $flag-icons-height, $ratio: $flag-icons-ratio, $path: $flag-icons-path) {
+  @include base($height, $ratio);
+  @include image($code, $path);
+}

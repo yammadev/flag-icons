@@ -1,5 +1,4 @@
-/node_modules
-npm-debug.log
-npm-debug.log.*
+node_modules/
+npm-debug.log*
+.DS_Store
 test.html
-package-lock.json
