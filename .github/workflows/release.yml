@@ -22,9 +22,9 @@ jobs:
       - run: npm run build && npm test
       - name: Tag matches package.json
         run: test "v$(node -p "require('./package.json').version")" = "${GITHUB_REF_NAME}"
-      - run: npm publish --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Trusted Publishing (OIDC) requires npm 11.5.1 or newer; no token needed
+      - run: npm install -g npm@latest
+      - run: npm publish
       - name: GitHub release
         run: |
           zip -qr "flag-icons-${GITHUB_REF_NAME}.zip" css svg png sass flags.json LICENSE README.md
